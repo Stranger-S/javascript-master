@@ -11,8 +11,14 @@ for ( let k = 645; k >= 0; k = k - 1){
 }
 
 for ( let l = -4; l <= 100; l = l + 2){
-    document.querySelector('#task4').innerHTML += l + " ";
+    //document.querySelector('#task4').innerHTML += l + " ";
 }
+
+let l = -6;
+do{
+    l = l + 2;
+    document.querySelector('#task4').innerHTML += l + " ";
+}while( l < 100)
 
 for ( let i = 1; i <= 9; i++){
     let j = 6;
