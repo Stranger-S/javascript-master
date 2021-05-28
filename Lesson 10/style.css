@@ -1,0 +1,20 @@
+.block {
+    width: 150px;
+    height: 150px;
+    background-color: burlywood;
+}
+.number {
+    padding-left: 20px;
+}
+.sq {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    color: white;
+}
+.frame {
+    padding: 10px;
+    border: 2px solid black;
+    overflow: hidden;
+    height: 400px;
+}
