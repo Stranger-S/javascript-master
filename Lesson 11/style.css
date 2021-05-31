@@ -1,0 +1,37 @@
+.modal {
+    position: absolute;
+    width: 500px;
+    height: 350px;
+    border: 1px solid #000;
+    background-color: lightgray;
+    display: block;
+    left: calc(50% - 250px);
+    top: 80px;
+    transition: 0.6s ease;
+}
+.modal-hide {
+    transform: translateY(-450px);
+}
+.modal-show {
+    transform: translateY(0);
+}
+#btn {
+    padding: 10px;
+    background: darkseagreen;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+}
+.block {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    background: yellowgreen;
+    margin: 40px;
+}
+.green {
+    background: lightseagreen;
+}
+.blue {
+    border: 4px solid darkslateblue;
+}

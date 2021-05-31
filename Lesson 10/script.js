@@ -13,8 +13,9 @@ let sq = document.querySelector('.sq');
 let left = 0;
 let up = 0;
 document.onkeydown = function(e){
-    //console.log(e);
-    if(e.key == "ArrowRight") {
+    console.log(e);
+    //if(e.key == "ArrowRight")
+    if(e.keyCode == 39) {
         left = left + 10;
         sq.style.marginLeft = left + 'px';
     }
