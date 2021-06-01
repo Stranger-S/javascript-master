@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson-12</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button class="modal-show" data-modal="#sign-in">Клик</button>
+  <div class="modal-wrap hide">
+      <div class="modal hide" id="sign-in">
+          блаблабла
+          <button class="modal-close" data-modal="#sign-in">Закрыть</button>
+          <button class="modal-close round-close" data-modal="#sign-in">x</button>
+      </div>
+  </div>
+  <!--Пример меню на мобильной версии странички-->
+  <div class="header">
+    <div class="header-nav">
+      <button class="header-item menu-btn" data-menu="#open">Меню</button>
+      <div class="header-item">
+        <button class="btn">Tel</button>
+        <button class="btn">Mail</button>
+      </div>
+    </div>
+  </div>
+  <div class="menu close">
+    <div class="menu-list" id="open">
+      <button class="menu-close">X</button>
+      <ul class="nav">
+        <li><a class="link" href="#">Главная</a></li>
+        <li><a class="link" href="#">О компании</a></li>
+        <li><a class="link" href="#">Контакты</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
