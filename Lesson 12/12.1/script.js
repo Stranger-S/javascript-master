@@ -23,27 +23,3 @@ function closeModalWrap() {
     this.classList.add('hide');
     this.children[0].classList.add('hide');
 }
-
-//Пример меню на мобильной версии странички
-let open = document.querySelector('.menu-btn');
-function openMenu() {
-    let menuId = this.dataset.menu;
-    document.querySelector(menuId).parentElement.classList.remove('close');
-    document.querySelector(menuId).classList.remove('close');
-}
-open.onclick = openMenu;
-
-let show = document.querySelector('.menu-close');
-function closeMenu() {
-    let menuId = this.dataset.menu;
-    document.querySelector(menuId).parentElement.classList.add('close');
-    document.querySelector(menuId).classList.add('close');
-}
-close.onclick = closeMenu;
-
-let hdMenu = document.querySelector('.menu');
-function hideMenu() {
-    this.classList.add('close');
-    this.children[0].classList.add('close');
-}
-hdMenu.onclick = hideMenu;
