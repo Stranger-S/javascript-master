@@ -12,8 +12,8 @@ function closeMenu() {
     document.querySelector(menuId).classList.add('close');
 }
 
-/*document.querySelector('.menu').onclick = hideMenu;
+document.querySelector('.menu').onclick = hideMenu;
 function hideMenu() {
     this.classList.add('close');
     this.children[0].classList.add('close');
-}*/
+}
