@@ -17,14 +17,14 @@ function closeMenu() {
     document.querySelector(menuId).parentElement.classList.add('close');
     document.querySelector(menuId).classList.add('close');
 }
-
+//--------Вариант решения----------
 document.onclick = function(e){
     if(e.target == document.querySelector('.menu')){
         document.querySelector('.menu').classList.add('close');
         document.querySelector('.menu-list').classList.add('close');
     }
 }
-
+//--------Похожий способ------
 /*document.addEventListener('click', function(event){
     let menu = document.querySelector('.menu');
     console.log(event.target);
