@@ -8,7 +8,7 @@ function chips(message, timeRemove = 3000){
     addChips(chips);
     setTimeout(function(){deleteChips(chips)},timeRemove);
     if(check.checked){
-        if(input.value == 0){
+        if(input.value.length == 0){
             chips.classList.add('wrong');
         }else{
             chips.classList.add('succes');
