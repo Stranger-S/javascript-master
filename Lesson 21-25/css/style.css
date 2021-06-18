@@ -1,0 +1,93 @@
+/*cabinet.php*/
+
+.flex_sex {
+    display: flex;
+    justify-content: space-between;
+}
+.button_update {
+    text-align: center;
+}
+
+/*index.html*/
+* {
+    box-sizing: border-box;
+}
+.main {
+    border-bottom: 2px solid #689f38;
+}
+h1 {
+    text-align: center;
+}
+.buttons {
+    position: absolute;
+    top: 54px;
+    right: 40px;
+}
+.modal-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    position:fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.3);
+    z-index: 2;
+    height: 100%;
+}
+.modal-window {
+    padding: 40px;
+    background-color: #fff;
+    position: relative;
+    z-index: 10;
+    border-radius: 10px;
+    height: 100%;
+    max-height: 720px;
+}
+.modal-close {
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    padding: 15px;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.close {
+    transition: 0.6s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+.block-slider {
+    overflow: hidden;
+    width: 400px;
+    height: 100%;
+    position: relative;
+}
+.slider-window {
+    width: 800px;
+    height: 100%;
+    position: relative;
+    transition: 1s ease;
+    overflow-y: hidden;
+}
+.slider-left, .slider-right {
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;
+    overflow-y: auto;
+}
+.rules {
+    color: #4a148c;
+    cursor: pointer;
+}
+.rules-back {
+    cursor: pointer;
+}
+.modal-login {
+    height: max-content;
+}
+

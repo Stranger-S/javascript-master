@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-20</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="css/chips.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="main">
+        <h1>Главная страница проекта</h1>
+        <div class="buttons">
+            <button class="button-show waves-effect waves-light btn-large light-green darken-2" data-modal="#signup">Регистрация</button>
+            <button class="button-show waves-effect waves-light btn-large light-green darken-2" data-modal="#login">Войти</button>
+        </div>
+    </div>
+    
+    <div class="modal-back close" >
+        <div class="modal-window close" id="signup">
+            <button class="modal-close red darken-1" data-modal="#signup"><i class="material-icons">clear</i></button>
+            <div class="block-slider">
+                <div class="slider-window">
+                    <div class="slider-left">
+                        <form method="POST">
+                            <div>Имя: <input type="text" name="name" id="signup-name"></div>
+                            <div>Фамилия: <input type="text" name="second-name" id="signup-second-name"></div>
+                            <div>Пароль: <input type="password" name="pass" id="signup-pass"></div>
+                            <div>Email: <input type="text" name="email" id="signup-email"></div>
+                            <div>Дата рождения: <input type="text" name="birthday" id="signup-birthday" class="datepicker"></div>
+                            <div>Пол:
+                                <p>
+                                    <label>
+                                      <input class="sex with-gap" type="radio" value="male" name="sex" />
+                                      <span>Мужчина</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                      <input class="sex with-gap" type="radio" value="female" name="sex"/>
+                                      <span>Женщина</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                      <input class="sex with-gap" type="radio" value="other" name="sex"/>
+                                      <span>Другое</span>
+                                    </label>
+                                </p>
+                            </div>
+                            <p>
+                                <label>
+                                    <input type="checkbox" class="filled-in" id="rules-check"/>
+                                    <span>Подтвердите согласие с <span class="rules">правилами</span></span>
+                                </label>
+                            </p>
+                            <button class="waves-effect waves-light btn-large light-green darken-2 right" disabled id="signup-submit">Регистрация</button>
+                        </form>
+                    </div>
+                    <div class="slider-right">
+                        <button class="rules-back waves-effect waves-light btn-large light-green darken-2">Назад</button>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolores odio nobis omnis. Dolor,
+                            impedit? Eaque enim illum at. </p>
+                        <p>Exercitationem unde aperiam soluta minus aliquid at deleniti quas facilis
+                            ipsam.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolores odio nobis omnis. Dolor,
+                            impedit? Eaque enim illum at. </p>
+                        <p>Exercitationem unde aperiam soluta minus aliquid at deleniti quas facilis
+                            ipsam.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolores odio nobis omnis. Dolor,
+                            impedit? Eaque enim illum at. </p>
+                        <p>Exercitationem unde aperiam soluta minus aliquid at deleniti quas facilis
+                            ipsam.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolores odio nobis omnis. Dolor,
+                            impedit? Eaque enim illum at. </p>
+                        <p>Exercitationem unde aperiam soluta minus aliquid at deleniti quas facilis
+                            ipsam.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolores odio nobis omnis. Dolor,
+                            impedit? Eaque enim illum at. </p>
+                        <p>Exercitationem unde aperiam soluta minus aliquid at deleniti quas facilis
+                            ipsam.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolores odio nobis omnis. Dolor,
+                            impedit? Eaque enim illum at. </p>
+                        <p>Exercitationem unde aperiam soluta minus aliquid at deleniti quas facilis
+                            ipsam.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolores odio nobis omnis. Dolor,
+                            impedit? Eaque enim illum at. </p>
+                        <p>Exercitationem unde aperiam soluta minus aliquid at deleniti quas facilis
+                            ipsam.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolores odio nobis omnis. Dolor,
+                            impedit? Eaque enim illum at. </p>
+                        <p>Exercitationem unde aperiam soluta minus aliquid at deleniti quas facilis
+                            ipsam.</p>
+                        <button class="rules-back waves-effect waves-light btn-large light-green darken-2"><i class="material-icons left">arrow_back</i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-back close">
+        <div class="modal-window modal-login close" id="login">
+            <button class="modal-close red darken-1" data-modal="#login"><i class="material-icons">clear</i></button>
+            <form method="POST">
+                <div>Email: <input type="text" name="email" id="login-email" value="alex@mail.ru"></div>
+                <div>Пароль: <input type="text" name="pass" id="login-pass" value="889944"></div>
+                <button class="button waves-effect waves-light btn-large light-green darken-2 right" id="login-submit">Войти</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="js/materialize.min.js"></script>
+    <script src="script/ajax.js"></script>
+    <script src="script/script.js"></script>
+    <script src="script/modal.js"></script>
+    <script src="script/chips.js"></script>
+</body>
+</html>
