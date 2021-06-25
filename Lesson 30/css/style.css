@@ -1,0 +1,42 @@
+.slider {
+    width: 65%;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+.slider-body {
+    width: 1066px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+}
+.item {
+    float: left;
+}
+.item img{
+    height: 600px;
+    object-fit: cover;
+}
+.prev, .next {
+    position: absolute;
+    top: calc(50% - 20px);
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 10;
+    cursor: pointer;
+    outline: none;
+}
+.prev {
+    background-image: url(../img/left-arrow.png);
+    left: 0;
+}
+.next {
+    background-image: url(../img/right-arrow.png);
+    right: 0;
+}
